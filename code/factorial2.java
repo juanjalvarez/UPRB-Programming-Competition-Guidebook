@@ -3,6 +3,6 @@ public static BigInteger fac(BigInteger n) {
 	BigInteger total = one;
 	BigInteger x;
 	for (x = n; x.compareTo(one) == 1; x = x.subtract(one))
-		total = total.multiply(n);
+		total = total.multiply(x);
 	return total;
 }
